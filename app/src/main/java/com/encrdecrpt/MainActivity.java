@@ -11,6 +11,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toast.makeText(this, "sed", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "ram", Toast.LENGTH_SHORT).show();
+        String  str;
+
     }
 }
