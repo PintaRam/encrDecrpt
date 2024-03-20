@@ -11,6 +11,7 @@
         android:layout_width="398dp"
         android:layout_height="66dp"
         android:hint="Name"
+        app:errorTextColor="@color/Red"
         android:textAlignment="center"
         app:hintTextColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,6 +34,7 @@
         android:layout_height="67dp"
         android:layout_marginTop="144dp"
         android:hint="Email"
+        app:errorTextColor="@color/Red"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,17 +48,20 @@
         </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>
 
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/paswd"
         android:layout_width="391dp"
         android:layout_height="67dp"
         android:layout_marginTop="166dp"
         android:hint="Password"
+        app:passwordToggleEnabled="true"
+        app:errorTextColor="@color/Red"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.415">
+        app:layout_constraintVertical_bias="0.405">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -65,13 +70,14 @@
         </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>
 
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/confirmpaswd"
         android:layout_width="391dp"
         android:layout_height="67dp"
         android:layout_marginTop="200dp"
-        android:hint="Confirem password"
+        android:hint="Confirm password"
+        app:passwordToggleEnabled="true"
+        app:errorTextColor="@color/Red"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -113,7 +119,7 @@
         app:layout_constraintVertical_bias="0.223" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/regis"
         android:layout_width="105dp"
         android:layout_height="50dp"
         android:layout_marginStart="64dp"
@@ -127,7 +133,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/log"
         android:layout_width="106dp"
         android:layout_height="48dp"
         android:layout_marginEnd="116dp"
@@ -136,7 +142,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/regis"
         app:layout_constraintTop_toBottomOf="@+id/confirmpaswd"
         app:layout_constraintVertical_bias="0.493" />
 </androidx.constraintlayout.widget.ConstraintLayout>
