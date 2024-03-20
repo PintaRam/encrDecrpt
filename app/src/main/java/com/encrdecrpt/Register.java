@@ -93,6 +93,8 @@ public class Register extends AppCompatActivity {
             Toast.makeText(this, "Registration Successfull !!!!", Toast.LENGTH_LONG).show();
             Intent i=new Intent(this,com.encrdecrpt.login.class);
             startActivity(i);
+
+            //Storing Data in DataBase is Pending
         }
     }
 }
