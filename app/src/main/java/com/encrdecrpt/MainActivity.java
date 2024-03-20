@@ -18,11 +18,20 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "king", Toast.LENGTH_SHORT).show();
         String  str;
         @SuppressLint({"MissingInflatedId", "LocalSuppress"})
-        Button btn1 = findViewById(R.id.button2);
-        btn1.setOnClickListener(new View.OnClickListener() {
+        Button mainbtn1 = findViewById(R.id.mainbtn1);
+        Button mainbtn2 = findViewById(R.id.mainbtn2);
+        mainbtn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i  = new Intent(MainActivity.this , login.class);
+                Intent i  = new Intent(MainActivity.this , encrypTextInImg.class);
+                startActivity(i);
+            }
+        });
+        mainbtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //change the encrypt to decrypt
+                Intent i  = new Intent(MainActivity.this , encrypTextInImg.class);
                 startActivity(i);
             }
         });

@@ -13,6 +13,12 @@
         android:theme="@style/Theme.EncrDecrpt"
         tools:targetApi="31">
         <activity
+            android:name=".embedImgSaved"
+            android:exported="false" />
+        <activity
+            android:name=".encrypTextInImg"
+            android:exported="false" />
+        <activity
             android:name=".login"
             android:exported="false" />
         <activity
