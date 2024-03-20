@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -15,10 +16,12 @@ public class Register extends AppCompatActivity {
     TextInputLayout name, email, password, confirmpassword;
     Button login, register;
 
+    DBHelper DB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
 
         //Hooks
         name = (TextInputLayout) findViewById(R.id.username);
@@ -29,6 +32,8 @@ public class Register extends AppCompatActivity {
         login = (Button) findViewById(R.id.log);
         register = (Button) findViewById(R.id.regis);
 
+        //DataBase Object
+        DB=new DBHelper(this);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -90,11 +95,32 @@ public class Register extends AppCompatActivity {
         }
 
         if (name.getError() == null && email.getError() == null && password.getError() == null && confirmpassword.getError() == null) {
-            Toast.makeText(this, "Registration Successfull !!!!", Toast.LENGTH_LONG).show();
-            Intent i=new Intent(this,com.encrdecrpt.login.class);
-            startActivity(i);
 
-            //Storing Data in DataBase is Pending
+            //Storing Data in DataBase
+            Boolean checkuser=DB.checkusers(username);
+            if(checkuser==false){
+                Boolean insert=DB.insertdata(username,usercfmr);
+                if(insert==true)
+                {
+                    Toast.makeText(this,"Data Stored Successfully !!",Toast.LENGTH_LONG).show();
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toast.makeText(Register.this, "Registration Successfull !!!!", Toast.LENGTH_LONG).show();
+                        }
+                    },5000);
+                    Intent i=new Intent(this,com.encrdecrpt.login.class);
+                    startActivity(i);
+                }
+                else
+                {
+                    Toast.makeText(Register.this, "Registration Failed !!!!", Toast.LENGTH_LONG).show();
+                }
+            }
+            else
+            {
+                Toast.makeText(Register.this, "User Already Exists !!!!", Toast.LENGTH_LONG).show();
+            }
         }
     }
 }
