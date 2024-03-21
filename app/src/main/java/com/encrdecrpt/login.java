@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.animation.Animation;
@@ -25,6 +26,8 @@ public class login extends AppCompatActivity {
     Button log,back;
     ImageView scrnimg;
     TextView logtext;
+
+    DBHelper DB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +36,8 @@ public class login extends AppCompatActivity {
         //Hooks
         top= AnimationUtils.loadAnimation(this,R.anim.top_anim);
         blink=AnimationUtils.loadAnimation(this,R.anim.blink);
+
+        DB=new DBHelper(this);
 
         Id=(TextInputLayout)findViewById(R.id.textInputLayout);
         passwrd=(TextInputLayout)findViewById(R.id.PasswordInputLayout);
@@ -88,9 +93,36 @@ public class login extends AppCompatActivity {
         String name=Id.getEditText().getText().toString();
         String password=passwrd.getEditText().getText().toString();
 
-        //geting Data from the DataBase and Validation is pending
-        Intent i =new Intent(this, MainActivity.class);
-        Toast.makeText(this, "Logged Successfully", Toast.LENGTH_SHORT).show();
-        startActivity(i);
+        if(name.isEmpty())
+        {
+            Id.setError("Filed Cann't be Empty !!");
+        }
+        else if(password.isEmpty())
+        {
+            passwrd.setError("Filed Cann't be Empty !!");
+        }
+
+        else {
+            //geting Data from the DataBase and Validation is pending
+            Boolean verify=DB.checkusersdetails(name,password);
+            if(verify==true)
+            {
+                Toast.makeText(this, "Verifying......", Toast.LENGTH_SHORT).show();
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+
+                        Intent i =new Intent(login.this, MainActivity.class);
+                        Toast.makeText(login.this, "Logged Successfully", Toast.LENGTH_SHORT).show();
+                        startActivity(i);
+                    }
+                },4000);
+            }
+            else
+            {
+                Toast.makeText(this, "Invalid Credentials !!", Toast.LENGTH_SHORT).show();
+            }
+        }
+
     }
 }
