@@ -15,8 +15,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toast.makeText(this, "king", Toast.LENGTH_SHORT).show();
-        String  str;
         @SuppressLint({"MissingInflatedId", "LocalSuppress"})
         Button mainbtn1 = findViewById(R.id.mainbtn1);
         Button mainbtn2 = findViewById(R.id.mainbtn2);

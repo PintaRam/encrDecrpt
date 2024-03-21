@@ -9,7 +9,7 @@
     <EditText
         android:id="@+id/encredit"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="68dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -17,26 +17,39 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
         android:layout_marginEnd="0dp"
-        android:layout_marginBottom="615dp"
+        android:layout_marginBottom="663dp"
         android:ems="10"
-        android:textAlignment="center"
         android:hint="Enter text here"
         android:inputType="text"
-        android:textSize="20sp"
-         />
+        android:textAlignment="center"
+        android:textSize="20sp" />
 
     <ImageView
         android:id="@+id/imggal"
-        android:layout_width="match_parent"
-        android:layout_height="280dp"
+        android:layout_width="wrap_content"
+        android:layout_height="203dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="238dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="213dp"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="466dp"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/imggal1"
+        android:layout_width="wrap_content"
+        android:layout_height="203dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="353dp"
+        android:layout_marginEnd="-8dp"
+        android:layout_marginBottom="175dp"
         android:scaleType="fitXY" />
 
     <Button
@@ -47,10 +60,10 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="560dp"
-        android:layout_marginEnd="212dp"
-        android:layout_marginBottom="108dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="667dp"
+        android:layout_marginEnd="207dp"
+        android:layout_marginBottom="1dp"
         android:text="select image"
         android:textSize="20sp" />
 
@@ -62,11 +75,11 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="224dp"
-        android:layout_marginTop="560dp"
-        android:layout_marginEnd="21dp"
-        android:layout_marginBottom="110dp"
+        android:layout_marginStart="229dp"
+        android:layout_marginTop="662dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
         android:text="Embed Text"
-        android:textSize="18sp"/>
+        android:textSize="18sp" />
 
 </RelativeLayout>
