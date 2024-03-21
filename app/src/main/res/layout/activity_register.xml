@@ -26,8 +26,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor=""
-            android:textColorHint="#EDCACA">
+            android:textColor="@color/white">
 
         </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>
@@ -133,7 +132,7 @@
         android:layout_width="105dp"
         android:layout_height="50dp"
         android:layout_marginStart="52dp"
-        android:layout_marginTop=""
+        android:layout_marginTop="1dp"
         android:text="Register"
         android:textColor="#302F2F"
         app:backgroundTint="#29FF89"
