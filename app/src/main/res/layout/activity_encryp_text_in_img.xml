@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".encrypTextInImg">
+
+    <EditText
+        android:id="@+id/encredit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="615dp"
+        android:ems="10"
+        android:textAlignment="center"
+        android:hint="Enter text here"
+        android:inputType="text"
+        android:textSize="20sp"
+         />
+
+    <ImageView
+        android:id="@+id/imggal"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="238dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="213dp"
+        android:scaleType="fitXY" />
+
+    <Button
+        android:id="@+id/encrbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="108dp"
+        android:text="select image"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/encrbtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="110dp"
+        android:text="Embed Text"
+        android:textSize="18sp"/>
+
+</RelativeLayout>
