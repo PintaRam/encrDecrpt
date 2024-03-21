@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/LightSeaGreen"
     tools:context=".encrypTextInImg">
 
     <EditText
@@ -21,6 +22,7 @@
         android:ems="10"
         android:textAlignment="center"
         android:hint="Enter text here"
+        android:textColorHint="@color/black"
         android:inputType="text"
         android:textSize="20sp"
          />
@@ -49,9 +51,12 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="19dp"
         android:layout_marginTop="560dp"
-        android:layout_marginEnd="212dp"
-        android:layout_marginBottom="108dp"
-        android:text="select image"
+        android:layout_marginEnd="224dp"
+        android:layout_marginBottom="90dp"
+        android:text="Select image"
+        android:textStyle="italic|bold"
+        android:backgroundTint="@color/Brown"
+        android:fontFamily="cursive"
         android:textSize="20sp" />
 
     <Button
@@ -65,8 +70,11 @@
         android:layout_marginStart="224dp"
         android:layout_marginTop="560dp"
         android:layout_marginEnd="21dp"
-        android:layout_marginBottom="110dp"
+        android:layout_marginBottom="90dp"
         android:text="Embed Text"
+        android:backgroundTint="@color/Brown"
+        android:textStyle="italic|bold"
+        android:fontFamily="cursive"
         android:textSize="18sp"/>
 
 </RelativeLayout>

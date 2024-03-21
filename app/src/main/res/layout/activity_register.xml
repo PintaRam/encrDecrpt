@@ -11,8 +11,8 @@
         android:layout_width="398dp"
         android:layout_height="66dp"
         android:hint="Name"
-        app:errorTextColor="@color/Red"
         android:textAlignment="center"
+        app:errorTextColor="@color/Red"
         app:hintTextColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,7 +23,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
         </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>
