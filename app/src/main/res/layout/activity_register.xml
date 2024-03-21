@@ -14,7 +14,6 @@
         android:hint="Name"
         app:errorTextColor="@color/Red"
         android:textAlignment="center"
-        app:hintTextColor="@color/black"
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,6 +37,7 @@
         android:layout_marginTop="144dp"
         android:hint="Email"
         app:errorTextColor="@color/Red"
+        android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +46,8 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textColor="@color/white">
 
         </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>
@@ -58,6 +59,7 @@
         android:layout_height="67dp"
         android:layout_marginTop="166dp"
         android:hint="Password"
+        android:textColorHint="@color/white"
         app:passwordToggleEnabled="true"
         app:errorTextColor="@color/Red"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -94,7 +96,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColorHint="#3F51B5">
+            android:textColorHint="#3F51B5"
+            android:textColor="@color/white">
 
         </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>

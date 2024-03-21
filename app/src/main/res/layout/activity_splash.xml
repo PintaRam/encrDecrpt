@@ -13,7 +13,7 @@
         android:layout_height="63dp"
         android:ems="10"
         android:fontFamily="sans-serif"
-        android:text="Image Steagnography "
+        android:text="Image Steganography "
         android:textColor="#FFFDFD"
         android:textFontWeight="900"
         app:autoSizeTextType="uniform"
