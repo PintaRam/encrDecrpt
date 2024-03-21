@@ -1,0 +1,331 @@
+Index: app/src/main/res/values/colors.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<resources>\r\n    <color name=\"black\">#FF000000</color>\r\n    <color name=\"white\">#FFFFFFFF</color>\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/colors.xml b/app/src/main/res/values/colors.xml
+--- a/app/src/main/res/values/colors.xml	(revision eea1e46af38d62b52f10f1bf28e8145bde2e55c1)
++++ b/app/src/main/res/values/colors.xml	(date 1710908594681)
+@@ -1,5 +1,143 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+-    <color name="black">#FF000000</color>
+-    <color name="white">#FFFFFFFF</color>
++    <color name="White">#FFFFFF</color>
++    <color name="Ivory">#FFFFF0</color>
++    <color name="LightYellow">#FFFFE0</color>
++    <color name="Yellow">#FFFF00</color>
++    <color name="Snow">#FFFAFA</color>
++    <color name="FloralWhite">#FFFAF0</color>
++    <color name="LemonChiffon">#FFFACD</color>
++    <color name="Cornsilk">#FFF8DC</color>
++    <color name="Seashell">#FFF5EE</color>
++    <color name="LavenderBlush">#FFF0F5</color>
++    <color name="PapayaWhip">#FFEFD5</color>
++    <color name="BlanchedAlmond">#FFEBCD</color>
++    <color name="MistyRose">#FFE4E1</color>
++    <color name="Bisque">#FFE4C4</color>
++    <color name="Moccasin">#FFE4B5</color>
++    <color name="NavajoWhite">#FFDEAD</color>
++    <color name="PeachPuff">#FFDAB9</color>
++    <color name="Gold">#FFD700</color>
++    <color name="Pink">#FFC0CB</color>
++    <color name="LightPink">#FFB6C1</color>
++    <color name="Orange">#FFA500</color>
++    <color name="LightSalmon">#FFA07A</color>
++    <color name="DarkOrange">#FF8C00</color>
++    <color name="Coral">#FF7F50</color>
++    <color name="HotPink">#FF69B4</color>
++    <color name="Tomato">#FF6347</color>
++    <color name="OrangeRed">#FF4500</color>
++    <color name="DeepPink">#FF1493</color>
++    <color name="Fuchsia">#FF00FF</color>
++    <color name="Magenta">#FF00FF</color>
++    <color name="Red">#FF0000</color>
++    <color name="OldLace">#FDF5E6</color>
++    <color name="LightGoldenrodYellow">#FAFAD2</color>
++    <color name="Linen">#FAF0E6</color>
++    <color name="AntiqueWhite">#FAEBD7</color>
++    <color name="Salmon">#FA8072</color>
++    <color name="GhostWhite">#F8F8FF</color>
++    <color name="MintCream">#F5FFFA</color>
++    <color name="WhiteSmoke">#F5F5F5</color>
++    <color name="Beige">#F5F5DC</color>
++    <color name="Wheat">#F5DEB3</color>
++    <color name="SandyBrown">#F4A460</color>
++    <color name="Azure">#F0FFFF</color>
++    <color name="Honeydew">#F0FFF0</color>
++    <color name="AliceBlue">#F0F8FF</color>
++    <color name="Khaki">#F0E68C</color>
++    <color name="LightCoral">#F08080</color>
++    <color name="PaleGoldenrod">#EEE8AA</color>
++    <color name="Violet">#EE82EE</color>
++    <color name="DarkSalmon">#E9967A</color>
++    <color name="Lavender">#E6E6FA</color>
++    <color name="LightCyan">#E0FFFF</color>
++    <color name="BurlyWood">#DEB887</color>
++    <color name="Plum">#DDA0DD</color>
++    <color name="Gainsboro">#DCDCDC</color>
++    <color name="Crimson">#DC143C</color>
++    <color name="PaleVioletRed">#DB7093</color>
++    <color name="Goldenrod">#DAA520</color>
++    <color name="Orchid">#DA70D6</color>
++    <color name="Thistle">#D8BFD8</color>
++    <color name="LightGrey">#D3D3D3</color>
++    <color name="Tan">#D2B48C</color>
++    <color name="Chocolate">#D2691E</color>
++    <color name="Peru">#CD853F</color>
++    <color name="IndianRed">#CD5C5C</color>
++    <color name="MediumVioletRed">#C71585</color>
++    <color name="Silver">#C0C0C0</color>
++    <color name="DarkKhaki">#BDB76B</color>
++    <color name="RosyBrown">#BC8F8F</color>
++    <color name="MediumOrchid">#BA55D3</color>
++    <color name="DarkGoldenrod">#B8860B</color>
++    <color name="FireBrick">#B22222</color>
++    <color name="PowderBlue">#B0E0E6</color>
++    <color name="LightSteelBlue">#B0C4DE</color>
++    <color name="PaleTurquoise">#AFEEEE</color>
++    <color name="GreenYellow">#ADFF2F</color>
++    <color name="LightBlue">#ADD8E6</color>
++    <color name="DarkGray">#A9A9A9</color>
++    <color name="Brown">#A52A2A</color>
++    <color name="Sienna">#A0522D</color>
++    <color name="YellowGreen">#9ACD32</color>
++    <color name="DarkOrchid">#9932CC</color>
++    <color name="PaleGreen">#98FB98</color>
++    <color name="DarkViolet">#9400D3</color>
++    <color name="MediumPurple">#9370DB</color>
++    <color name="LightGreen">#90EE90</color>
++    <color name="DarkSeaGreen">#8FBC8F</color>
++    <color name="SaddleBrown">#8B4513</color>
++    <color name="DarkMagenta">#8B008B</color>
++    <color name="DarkRed">#8B0000</color>
++    <color name="BlueViolet">#8A2BE2</color>
++    <color name="LightSkyBlue">#87CEFA</color>
++    <color name="SkyBlue">#87CEEB</color>
++    <color name="Gray">#808080</color>
++    <color name="Olive">#808000</color>
++    <color name="Purple">#800080</color>
++    <color name="Maroon">#800000</color>
++    <color name="Aquamarine">#7FFFD4</color>
++    <color name="Chartreuse">#7FFF00</color>
++    <color name="LawnGreen">#7CFC00</color>
++    <color name="MediumSlateBlue">#7B68EE</color>
++    <color name="LightSlateGray">#778899</color>
++    <color name="SlateGray">#708090</color>
++    <color name="OliveDrab">#6B8E23</color>
++    <color name="SlateBlue">#6A5ACD</color>
++    <color name="DimGray">#696969</color>
++    <color name="MediumAquamarine">#66CDAA</color>
++    <color name="CornflowerBlue">#6495ED</color>
++    <color name="CadetBlue">#5F9EA0</color>
++    <color name="DarkOliveGreen">#556B2F</color>
++    <color name="Indigo">#4B0082</color>
++    <color name="MediumTurquoise">#48D1CC</color>
++    <color name="DarkSlateBlue">#483D8B</color>
++    <color name="SteelBlue">#4682B4</color>
++    <color name="RoyalBlue">#4169E1</color>
++    <color name="Turquoise">#40E0D0</color>
++    <color name="MediumSeaGreen">#3CB371</color>
++    <color name="LimeGreen">#32CD32</color>
++    <color name="DarkSlateGray">#2F4F4F</color>
++    <color name="SeaGreen">#2E8B57</color>
++    <color name="ForestGreen">#228B22</color>
++    <color name="LightSeaGreen">#20B2AA</color>
++    <color name="DodgerBlue">#1E90FF</color>
++    <color name="MidnightBlue">#191970</color>
++    <color name="Aqua">#00FFFF</color>
++    <color name="Cyan">#00FFFF</color>
++    <color name="SpringGreen">#00FF7F</color>
++    <color name="Lime">#00FF00</color>
++    <color name="MediumSpringGreen">#00FA9A</color>
++    <color name="DarkTurquoise">#00CED1</color>
++    <color name="DeepSkyBlue">#00BFFF</color>
++    <color name="DarkCyan">#008B8B</color>
++    <color name="Teal">#008080</color>
++    <color name="Green">#008000</color>
++    <color name="DarkGreen">#006400</color>
++    <color name="Blue">#0000FF</color>
++    <color name="MediumBlue">#0000CD</color>
++    <color name="DarkBlue">#00008B</color>
++    <color name="Navy">#000080</color>
++    <color name="Black">#000000</color>
+ </resources>
+\ No newline at end of file
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\">\r\n\r\n    <application\r\n        android:allowBackup=\"true\"\r\n        android:dataExtractionRules=\"@xml/data_extraction_rules\"\r\n        android:fullBackupContent=\"@xml/backup_rules\"\r\n        android:icon=\"@mipmap/ic_launcher\"\r\n        android:label=\"@string/app_name\"\r\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\r\n        android:supportsRtl=\"true\"\r\n        android:theme=\"@style/Theme.EncrDecrpt\"\r\n        tools:targetApi=\"31\">\r\n        <activity\r\n            android:name=\".Splash\"\r\n            android:exported=\"true\" >\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\" />\r\n\r\n                <category android:name=\"android.intent.category.LAUNCHER\" />\r\n            </intent-filter>\r\n        </activity>\r\n        <activity\r\n            android:name=\".MainActivity\"\r\n            android:exported=\"true\">\r\n\r\n        </activity>\r\n    </application>\r\n\r\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml
+--- a/app/src/main/AndroidManifest.xml	(revision eea1e46af38d62b52f10f1bf28e8145bde2e55c1)
++++ b/app/src/main/AndroidManifest.xml	(date 1710908594938)
+@@ -22,6 +22,9 @@
+             </intent-filter>
+         </activity>
+         <activity
++            android:name=".login"
++            android:exported="false" />
++        <activity
+             android:name=".MainActivity"
+             android:exported="true">
+ 
+Index: app/build.gradle.kts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>plugins {\r\n    id(\"com.android.application\")\r\n}\r\n\r\nandroid {\r\n    namespace = \"com.encrdecrpt\"\r\n    compileSdk = 34\r\n\r\n    defaultConfig {\r\n        applicationId = \"com.encrdecrpt\"\r\n        minSdk = 19\r\n        targetSdk = 34\r\n        versionCode = 1\r\n        versionName = \"1.0\"\r\n\r\n        testInstrumentationRunner = \"androidx.test.runner.AndroidJUnitRunner\"\r\n    }\r\n\r\n    buildTypes {\r\n        release {\r\n            isMinifyEnabled = false\r\n            proguardFiles(getDefaultProguardFile(\"proguard-android-optimize.txt\"), \"proguard-rules.pro\")\r\n        }\r\n    }\r\n    compileOptions {\r\n        sourceCompatibility = JavaVersion.VERSION_1_8\r\n        targetCompatibility = JavaVersion.VERSION_1_8\r\n    }\r\n}\r\n\r\ndependencies {\r\n\r\n    implementation(\"androidx.appcompat:appcompat:1.6.1\")\r\n    implementation(\"com.google.android.material:material:1.11.0\")\r\n    implementation(\"androidx.constraintlayout:constraintlayout:2.1.4\")\r\n    testImplementation(\"junit:junit:4.13.2\")\r\n    androidTestImplementation(\"androidx.test.ext:junit:1.1.5\")\r\n    androidTestImplementation(\"androidx.test.espresso:espresso-core:3.5.1\")\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/build.gradle.kts b/app/build.gradle.kts
+--- a/app/build.gradle.kts	(revision eea1e46af38d62b52f10f1bf28e8145bde2e55c1)
++++ b/app/build.gradle.kts	(date 1710908595047)
+@@ -34,6 +34,7 @@
+     implementation("com.google.android.material:material:1.11.0")
+     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+     testImplementation("junit:junit:4.13.2")
++    implementation ("com.google.android.material:material:1.5.0")
+     androidTestImplementation("androidx.test.ext:junit:1.1.5")
+     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+ }
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_login.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_login.xml b/app/src/main/res/layout/activity_login.xml
+new file mode 100644
+--- /dev/null	(date 1710908594804)
++++ b/app/src/main/res/layout/activity_login.xml	(date 1710908594804)
+@@ -0,0 +1,71 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".login">
++
++    <TextView
++        android:id="@+id/textView"
++        android:layout_width="410dp"
++        android:layout_height="75dp"
++        android:text="Login"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.0"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.268"
++        android:textAlignment="center"
++        android:textSize="55sp"
++        android:textStyle="bold"
++        android:textColor="@color/Gold"/>
++
++    <EditText
++        android:id="@+id/editTextText"
++        android:layout_width="310dp"
++        android:layout_height="56dp"
++        android:ems="10"
++        android:inputType="text"
++        android:text=""
++        android:hint="Username"
++        android:textSize="25sp"
++        android:textAlignment="center"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.495"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.499" />
++
++    <EditText
++        android:id="@+id/editTextText2"
++        android:layout_width="306dp"
++        android:layout_height="55dp"
++        android:ems="10"
++        android:inputType="textPassword"
++        android:textSize="25sp"
++        android:text=""
++        android:hint="Password"
++        android:textAlignment="center"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.514"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.673" />
++
++    <Button
++        android:id="@+id/button"
++        android:layout_width="207dp"
++        android:layout_height="61dp"
++        android:text="Login"
++        android:textSize="30sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.822" />
++
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/encrdecrpt/login.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/encrdecrpt/login.java b/app/src/main/java/com/encrdecrpt/login.java
+new file mode 100644
+--- /dev/null	(date 1710908594791)
++++ b/app/src/main/java/com/encrdecrpt/login.java	(date 1710908594791)
+@@ -0,0 +1,42 @@
++package com.encrdecrpt;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.os.Bundle;
++import android.text.TextUtils;
++import android.view.View;
++import android.widget.Button;
++import android.widget.EditText;
++import android.widget.Toast;
++
++public class login extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_login);
++        EditText username =  findViewById(R.id.editTextText);
++        EditText password = findViewById(R.id.editTextText2);
++        Button btn = findViewById(R.id.button);
++
++        btn.setOnClickListener(new View.OnClickListener() {
++            @Override
++            public void onClick(View v) {
++                String name = username.getText().toString();
++                String pass = password.getText().toString();
++                if(TextUtils.isEmpty(name) || TextUtils.isEmpty(pass))
++                {
++                    Toast.makeText(login.this, "Please Enter valid information", Toast.LENGTH_SHORT).show();
++
++                }else if(pass.length()<6) {
++                    password.setError("Password length must be greater than 6");
++                }
++                else {
++                    //Please add else part
++                    Toast.makeText(login.this, "Please tell about yourself", Toast.LENGTH_SHORT).show();
++
++                }
++            }
++        });
++    }
++}
+\ No newline at end of file
