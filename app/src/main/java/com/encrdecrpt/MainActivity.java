@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //change the encrypt to decrypt
-                Intent i  = new Intent(MainActivity.this , encrypTextInImg.class);
+                Intent i  = new Intent(MainActivity.this , Decrypted_Text.class);
                 startActivity(i);
             }
         });

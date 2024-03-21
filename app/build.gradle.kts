@@ -36,6 +36,7 @@ dependencies {
     implementation ("com.google.android.material:material:1.4.0")
     testImplementation("junit:junit:4.13.2")
     implementation ("com.google.android.material:material:1.5.0")
+    implementation ("com.rmtheis:tess-two:9.1.0")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }

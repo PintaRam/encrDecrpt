@@ -85,9 +85,8 @@ public class encrypTextInImg extends AppCompatActivity {
                 encrybtn2.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-//                        Intent i = new Intent(encrypTextInImg.this, embedImgSaved.class);
-////                        i.putExtra("modifiedbitmap", modifiedBitmap);
-//                        startActivity(i);
+                        Intent i = new Intent(encrypTextInImg.this, Decrypted_Text.class);
+                        startActivity(i);
                         saveImage(modifiedBitmap);
                     }
                 });

@@ -66,5 +66,7 @@ public class embedImgSaved extends AppCompatActivity {
 //            Toast.makeText(this, "Failed to save image", Toast.LENGTH_SHORT).show();
 //        }
 //    }
+
+
     }
 }
