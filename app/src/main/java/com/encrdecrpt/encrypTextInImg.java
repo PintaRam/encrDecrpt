@@ -4,11 +4,13 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.ContentValues;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.media.Image;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.provider.MediaStore;
@@ -26,6 +28,7 @@ import java.io.IOException;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.OutputStream;
 
 public class encrypTextInImg extends AppCompatActivity {
     private final int img_Req_Code = 1000;
@@ -92,27 +95,24 @@ public class encrypTextInImg extends AppCompatActivity {
         }
     }
     private void saveImage(Bitmap bitmap) {
-        // Define the directory where the image will be saved
-        String directoryPath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).toString();
-        File directory = new File(directoryPath);
-
-        // Create the directory if it doesn't exist
-        if (!directory.exists()) {
-            directory.mkdirs();
-        }
-
-        // Create a unique filename for the image
+        // Get the current time as a unique filename
         String fileName = "saved_image_" + System.currentTimeMillis() + ".jpg";
 
-        // Create the file object
-        File file = new File(directory, fileName);
+        // Save the image to the MediaStore
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(MediaStore.Images.Media.DISPLAY_NAME, fileName);
+        contentValues.put(MediaStore.Images.Media.MIME_TYPE, "image/jpeg");
+
+        // Get the URI of the external content provider for the MediaStore.Images.Media
+        Uri imageUri = getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, contentValues);
 
         try {
-            // Write the bitmap to the file
-            FileOutputStream outputStream = new FileOutputStream(file);
+            // Open an output stream to write data into the content provider
+            OutputStream outputStream = getContentResolver().openOutputStream(imageUri);
             bitmap.compress(Bitmap.CompressFormat.JPEG, 100, outputStream);
-            outputStream.flush();
-            outputStream.close();
+
+            // Close the output stream
+            ((OutputStream) outputStream).close();
 
             // Show a toast message indicating the image has been saved
             Toast.makeText(this, "Image saved successfully", Toast.LENGTH_SHORT).show();
@@ -121,6 +121,7 @@ public class encrypTextInImg extends AppCompatActivity {
             Toast.makeText(this, "Failed to save image", Toast.LENGTH_SHORT).show();
         }
     }
+
 
 
     private Bitmap getPixelData(Bitmap bitmap) {
